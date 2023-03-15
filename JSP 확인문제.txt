@@ -1,0 +1,39 @@
+1. 웹 프로그램의 3단계
+	클라이언트측 / 웹서버측 / DB측
+
+2. 웹 서버측의 구성(웹 서버 + WAS 2개 각각의 역할)
+	웹 서버 >> http요청/응답
+	WAS >> 자바로 동적처리부분 담당
+
+3. WAS는 무엇의 약자?
+	Web Application Server
+
+4. 웹서버 종류?
+	apache, nginx(엔진엑스)
+
+5. 어떤 자바 WAS를 사용해봤나요?
+	tomcat
+
+6. JDBC 4단계를 정리해 보기********
+	driver 설정 >> db연결 >> sql문 생성 >> db로 sql문 전송
+
+7. mySQL과 Oracle의 기본 port는?
+	mySQL(3306) / Oracle(1521)
+
+8. JSP의 약자
+	Java Server Pages
+
+9. servlet과 JSP의 관계
+	JSP는 서블릿이라 자바프로그램으로 변환되어 실행
+
+10. http의 용도, 약자
+	클라이언트와 웹 서버의 통신 규칙(규약, 프로토콜) / Hyper Text Transfer Protocol
+
+11. http의 구성요소 2가지
+	header + body
+
+12. 브라우저가 보낼 때의 http 헤더와 바디
+	header(요청주소 + get(데이터)) / body(post(전송한 데이터))
+
+13. 웹 서버가 보낼 때의 http 헤더와 바디
+	header(상태코드) / body(요청한 데이터 처리결과(html))

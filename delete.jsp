@@ -1,3 +1,5 @@
+<%@page import="multi.MemberDAO_w"%>
+<%@page import="multi.MemberVO_w"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <!-- 1. 전달된 값 받기(request이용)-->
@@ -9,8 +11,9 @@
     //tomcat은 미리 request를 만들어서 내장되어있다
     String id = request.getParameter("id");
    
+    MemberDAO_w dao = new MemberDAO_w();
+    dao.delete(id);
    
-    
     %>
     <!-- 브라우저에게 결과를 알려주기 위한 html코드가 미리 들어가 있음 -->
 <!DOCTYPE html>
@@ -27,7 +30,7 @@ body{
 <body>
 회원탈퇴 완료
 <hr color = "red">
-회원 id : <%= id %> <br>
+탈퇴한 회원 id : <%= id %> <br>
 
 
 
