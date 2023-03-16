@@ -29,36 +29,36 @@ button {
 
 </head>
 <body>
-<h3>게시판글쓰기 페이지</h3>
+<h3>개인정보 검색(상세) 페이지</h3>
 <hr>
-<a href="bbs.html">
+<a href="member.html">
 	<button id = "b1">첫페이지로</button>
 </a>
-<form action="insert2.jsp">
+<hr>
+<!-- a태그는 무조건 get방식 요청 -->
+<a href="http://localhost:8888/web00/one.jsp?id=apple1">
+	<button style="background: white;">apple1</button>
+</a>
+<a href="http://localhost:8888/web00/one.jsp?id=ice1">
+	<button style="background: white;">ice1</button>
+</a>
+
+<hr>
+
+<form action="one.jsp" method="get">
 <table border="1">
 	
 	<tr>
-		<td class="t1">제목 : </td>
+		<td class="t1">검색할 아이디 : </td>
 		<td>
-			<input name ="title">
+			<input name ="id">
 			
 		</td>
 	</tr>
-	<tr>
-		<td class="t1">내용 :</td>
-		<td>
-			<input name ="content">
-		</td>
-	</tr>
-	<tr>
-		<td class="t1">글쓴이 : </td>
-		<td>
-			<input name ="writer">
-		</td>
-	</tr>
+	
 	<tr>
 		<td colspan ="2" class="t1">
-			<button id = "b2">게시판 글쓰기 데이터 전송</button>
+			<button id = "b2">검색할 id 데이터 전송</button>
 		</td>
 	</tr>
 	

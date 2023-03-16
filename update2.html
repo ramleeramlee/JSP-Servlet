@@ -4,18 +4,18 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
-	//alert('게시판글쓰기 페이지입니다.')
+	//alert('게시글수정 페이지입니다.')
 </script>
 <style type="text/css">
 body { 
-	background: #eb8daa;
+	background: #18de02;
 }
 button {
 	background: pink;
 }
 .t1{ /* .은 클래스 선택!, 여러개선택!  */
 	background: yellow;
-	width: 150px;
+	width: 200px;
 	text-align: center;
 }
 
@@ -29,36 +29,29 @@ button {
 
 </head>
 <body>
-<h3>게시판글쓰기 페이지</h3>
+<h3>게시글수정 페이지</h3>
 <hr>
 <a href="bbs.html">
-	<button id = "b1">첫페이지로</button>
+	<button id = 'b1'>첫페이지로</button>
 </a>
-<form action="insert2.jsp">
+<form action="update2.jsp"  method = "get">
 <table border="1">
-	
 	<tr>
-		<td class="t1">제목 : </td>
+		<td class="t1">수정 할 게시판 번호 : </td>
 		<td>
-			<input name ="title">
+			<input name ="no">
 			
 		</td>
 	</tr>
 	<tr>
-		<td class="t1">내용 :</td>
+		<td class="t1">수정 할 게시판 내용 : </td>
 		<td>
 			<input name ="content">
 		</td>
 	</tr>
 	<tr>
-		<td class="t1">글쓴이 : </td>
-		<td>
-			<input name ="writer">
-		</td>
-	</tr>
-	<tr>
 		<td colspan ="2" class="t1">
-			<button id = "b2">게시판 글쓰기 데이터 전송</button>
+			<button id = "b2">회원수정 데이터 전송</button>
 		</td>
 	</tr>
 	

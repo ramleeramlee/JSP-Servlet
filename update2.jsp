@@ -1,5 +1,5 @@
-<%@page import="multi.BbsDAO_w"%>
 <%@page import="multi.BbsVO_w"%>
+<%@page import="multi.BbsDAO_w"%>
 <%@ page language="java" contentType="text/html; charset=UTF-8"
     pageEncoding="UTF-8"%>
     <!-- 1. 전달된 값 받기(request이용)-->
@@ -9,21 +9,17 @@
     //자바코드 넣는 부분!!!!!!
    	//HttpServletRequest request = new HttpServletRequest();
     //tomcat은 미리 request를 만들어서 내장되어있다
-    String title = request.getParameter("title");
-    String content = request.getParameter("content");
-    String writer = request.getParameter("writer");
-    
-    // 1.가방을 만든다
+    String no = request.getParameter("no"); 
+    String content = request.getParameter("content"); 
+    //외부에서 손으로 치는 것들은 전부 String
+   
     BbsVO_w bag = new BbsVO_w();
-    bag.setTitle(title);
+    bag.setNo(Integer.parseInt(no));
     bag.setContent(content);
-    bag.setWriter(writer);
     
     BbsDAO_w dao = new BbsDAO_w();
-    dao.insert(bag);
-    
-    // 2. dao에게 가방 전달하면서 insert해 달라고 하기
-    
+    dao.update(bag);
+   
     %>
     <!-- 브라우저에게 결과를 알려주기 위한 html코드가 미리 들어가 있음 -->
 <!DOCTYPE html>
@@ -33,16 +29,15 @@
 <title>Insert title here</title>
 <style type="text/css">
 body{
-	background: lime;
+	background: gray;
 }
 </style>
 </head>
 <body>
-게시판 글쓰기 완료
+게시글 수정
 <hr color = "red">
-게시판 title : <%= title %> <br>
-게시판 content : <%= content %> <br>
-게시판 writer : <%= writer %> <br>
+수정을 원하는 게시글 번호 : <%= no %> <br>
+수정을 원하는 게시글 내용 : <%= content %>
 
 
 

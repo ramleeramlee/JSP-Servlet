@@ -4,7 +4,7 @@
 <meta charset="UTF-8">
 <title>Insert title here</title>
 <script type="text/javascript">
-	//alert('게시판글쓰기 페이지입니다.')
+	
 </script>
 <style type="text/css">
 body { 
@@ -29,36 +29,48 @@ button {
 
 </head>
 <body>
-<h3>게시판글쓰기 페이지</h3>
+<h3>영화 등록 페이지</h3>
 <hr>
-<a href="bbs.html">
+<a href="index.html">
 	<button id = "b1">첫페이지로</button>
-</a>
-<form action="insert2.jsp">
+</a> 
+<form action="insert4.jsp">
 <table border="1">
 	
 	<tr>
-		<td class="t1">제목 : </td>
+		<td class="t1">id : </td>
 		<td>
-			<input name ="title">
+			<input name ="id">
 			
 		</td>
 	</tr>
 	<tr>
-		<td class="t1">내용 :</td>
+		<td class="t1">title :</td>
+		<td>
+			<input name ="title">
+		</td>
+	</tr>
+	<tr>
+		<td class="t1">content : </td>
 		<td>
 			<input name ="content">
 		</td>
 	</tr>
 	<tr>
-		<td class="t1">글쓴이 : </td>
+		<td class="t1">location : </td>
 		<td>
-			<input name ="writer">
+			<input name ="location">
+		</td>
+	</tr>
+	<tr>
+		<td class="t1">director : </td>
+		<td>
+			<input name ="director">
 		</td>
 	</tr>
 	<tr>
 		<td colspan ="2" class="t1">
-			<button id = "b2">게시판 글쓰기 데이터 전송</button>
+			<button id = "b2">영화 등록 데이터 전송</button>
 		</td>
 	</tr>
 	
