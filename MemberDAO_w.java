@@ -7,7 +7,7 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet;
 import java.util.ArrayList;
 
-import javax.swing.JOptionPane;
+import multi.MemberVO_w;
 
 public class MemberDAO_w {
 
@@ -16,7 +16,7 @@ public class MemberDAO_w {
 
 		// 가방들 넣어줄 큰 컨테이너 역할의 부품이 필요
 		// ArrayList
-		ArrayList<MemberVO_w> list = new ArrayList();
+		ArrayList<MemberVO_w> list = new ArrayList<>();
 
 		MemberVO_w bag = null;
 

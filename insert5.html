@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+body { 
+	background: #9cdcf0;
+}
+button {
+	background: white;
+}
+.t1{ /* .은 클래스 선택!, 여러개선택!  */
+	background: #9ccef0;
+	width: 150px;
+	text-align: center;
+}
+
+#b1{
+	color: red;
+}
+#b2{
+	color: blue;
+}
+</style>
+
+</head>
+<body>
+<h3>메일 등록 페이지</h3>
+<hr>
+<a href="Mail.html">
+	<button id = "b1">첫페이지로</button>
+</a> 
+<form action="insert5.jsp">
+<table border="1">
+	
+	<tr>
+		<td class="t1">no</td>
+		<td>
+			<input name ="no">
+			
+		</td>
+	</tr>
+	<tr>
+		<td class="t1">send</td>
+		<td>
+			<input name ="send">
+		</td>
+	</tr>
+	<tr>
+		<td class="t1">title</td>
+		<td>
+			<input name ="title">
+		</td>
+	</tr>
+	<tr>
+		<td class="t1">content</td>
+		<td>
+			<input name ="content">
+		</td>
+	</tr>
+	<tr>
+		<td class="t1">date</td>
+		<td>
+			<input name ="date">
+		</td>
+	</tr>
+	<tr>
+		<td colspan ="2" class="t1">
+			<button id = "b2">메일 보내기</button>
+		</td>
+	</tr>
+	
+</table>
+	
+</form>
+</body>
+</html>

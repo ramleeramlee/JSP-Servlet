@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+body { 
+	background: #9cdcf0;
+}
+button {
+	background: white;
+}
+.t1{ /* .은 클래스 선택!, 여러개선택!  */
+	background: #9ccef0;
+	width: 150px;
+	text-align: center;
+}
+
+#b1{
+	color: red;
+}
+#b2{
+	color: blue;
+}
+</style>
+
+</head>
+<body>
+<h3>메일 삭제 페이지</h3>
+<hr>
+<a href="Mail.html">
+	<button id = "b1">첫페이지로</button>
+</a>
+<form action="delete5.jsp" method = "get">
+<!-- get방식은 주소 뒤에 남는다 // 비밀번호처럼 중요한 내용은 get방식으로 사용하면x-->
+<table border="1">
+	<tr>
+		<td class="t1">삭제 할 번호</td>
+		<td>
+			<input name ="no">
+			
+		</td>
+	</tr>
+	
+	<tr>
+		<td colspan ="2" class="t1">
+			<button id = "b2">메일 삭제</button>
+		</td>
+	</tr>
+	
+</table>
+	
+</form>
+</body>
+</html>

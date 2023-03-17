@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<style type="text/css">
+body { 
+	background: #9cdcf0;
+}
+button {
+	background: white;
+}
+.t1{ /* .은 클래스 선택!, 여러개선택!  */
+	background: #9ccef0;
+	width: 150px;
+	text-align: center;
+}
+
+#b1{
+	color: red;
+}
+#b2{
+	background: pink;
+}
+</style>
+
+</head>
+<body>
+<h3>메일 검색 페이지</h3>
+<hr>
+<a href="Mail.html">
+	<button id = "b1">첫페이지로</button>
+</a>
+<hr>
+<!-- a태그는 무조건 get방식 요청 -->
+즐겨찾기★
+<a href="one5.jsp?no=1">
+	<button style="background: white;">No.1</button>
+</a>
+<a href="one5.jsp?no=3">
+	<button style="background: white;">No.3</button>
+</a>
+<a href="one5.jsp?no=9">
+	<button style="background: white;">No.9</button>
+</a>
+<hr>
+
+<form action="one5.jsp" method="get">
+<table border="1">
+	<tr>
+		<td class="t1">메일 번호</td>
+		<td>
+			<input name ="no">
+		</td>
+	</tr>
+	<tr>
+		<td colspan ="2" class="t1">
+			<button id = "b2">검색</button>
+		</td>
+	</tr>
+</table>	
+</form> 
+
+<form action="list5_1.jsp" method="get">	
+<table border="1">	
+<tr>
+		<td class="t1">받는사람@</td>
+		<td>
+			<input name ="send">
+		</td>
+	</tr>
+	<tr>
+		<td colspan ="2" class="t1">
+			<button id = "b2">검색</button>
+		</td>
+	</tr>
+</table>
+</form>
+
+<form action="list5_2.jsp" method="get">
+<table border="1">	
+	<tr>
+		<td class="t1">내용</td>
+		<td>
+			<input name ="content">
+		</td>
+	</tr>
+	<tr>
+		<td colspan ="2" class="t1">
+			<button id = "b2">검색</button>
+		</td>
+	</tr>
+</table>
+</form>
+
+</body>
+</html>
