@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+function idCheck() {
+	id = document.getElementById("user").value
+	
+	result_tag = document.getElementById("result")
+	
+	if (id.length >= 5) {
+		result_tag.innerHTML = '가입가능' 
+	} else {
+		result_tag.innerHTML = '가입불가능'
+	}
+}
+
+function pwCheck() {
+	pw = document.getElementById("pw").value
+	pw2 = document.getElementById("pw2").value
+	
+	result_tag = document.getElementById("result")
+	
+	if (pw == pw2) {
+		//result_tag.innerHTML = '일치!!!! <img src =img/완료.png width =200 height =200>'
+		location.href = "http://www.naver.com"
+	} else {
+		//result_tag.innerHTML = '불일치!!!! <img src =img/oops.jpg width =200 height =200>'
+		location.href = "http://www.daum.net"
+	} // location은 브라우저의 주소부분을 나타내는 내장된 객체
+	  // location은 href라는 변수에 요청하고 싶은 주소를 넣어주면
+	  // 자바스크립트의 브라우저의 주소부분에 주소를 넣고 엔터까지 쳐서 요청을 해줌
+}
+
+</script>
+
+</head>
+<body>
+아이디 : 
+<input id ="user" value="test">
+<button onclick="idCheck()" style ="color: blue; background: pink;">글자수 체크</button><br>
+
+패스워드 : 
+<input id ="pw" value="test"> <br>
+
+패스워드2 : 
+<input id ="pw2" value="test">
+<button onclick="pwCheck()" style ="color: white; background: lime;">패스워드 동일</button>
+
+<hr>
+<div id = "result" style="color: red; background: yellow; width: 500px; height: 50px; font-size: 50px"></div>
+
+</body>
+</html>

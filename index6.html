@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+function me() {
+	company = document.getElementById("company").value
+	position = document.getElementById("position").value
+	name = document.getElementById("name").value
+	gender = document.getElementById("gender").value
+	total = company + "회사에  "+ position + "으로 있는 " + name + "입니다."
+	
+	 if (gender == '남자') {
+		total2 = total + '<img src = img/man.png width =200 height =200>'
+	} else {
+		total2 = total + '<img src = img/woman.png width =200 height =200>'
+	} 
+	result_tag = document.getElementById("result")
+	result_tag.innerHTML = total2
+}
+
+</script>
+
+</head>
+<body>
+이름 : 
+<input id ="name" value="홍길동"><br>
+
+회사명 :  
+<input id ="company" value="멀티"><br>
+
+직책 : 
+<input id ="position" value="팀장"><br>
+
+성별 : 
+<input id ="gender" value="남자">
+<button onclick="me()" style ="color: white; background: pink;">확인</button>
+
+<hr>
+<div id = "result" style="font-size: 20px"></div>
+
+</body>
+</html>

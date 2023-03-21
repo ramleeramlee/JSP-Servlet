@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+
+<script type="text/javascript">
+function bag() {
+	first = document.getElementById("first").value
+	result_tag = document.getElementById("result")
+
+	 if (first == "휴대폰") {
+		result_tag.innerHTML = '<img src = img/휴대폰.jpg width =300 height =300>'
+	} else if (first == "시계"){
+		result_tag.innerHTML = '<img src = img/시계.jpg width =300 height =300>'
+	} else {
+		result_tag.innerHTML = '<img src = img/1.jpg width =300 height =300>'
+	}
+	
+	
+}
+
+function bag2() {
+	second = document.getElementById("second").value
+	result_tag = document.getElementById("result")
+	
+	if (second == "시계") {
+		location.href = "https://search.shopping.naver.com/search/category/100000027"
+	} else if(second == "가방"){
+		location.href = "https://www.ostkaka.co.kr/product/list.html?cate_no=24"
+	} 
+	
+}	
+
+</script>
+
+</head>
+<body>
+가방 속 물건 중 제일 중요한 것은?? 
+<br>
+<input id ="first">
+<button onclick="bag()" style ="color: white; background: pink;">확인</button>
+<br>
+가방 속 물건 중 두번째로 중요한 것은??
+<br>
+<input id ="second">
+<button onclick="bag2()" style ="color: white; background: pink;">확인</button>
+<hr>
+<div id = "result" style="font-size: 20px"></div>
+
+</body>
+</html>
