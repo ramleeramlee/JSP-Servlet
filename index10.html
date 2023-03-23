@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript" src="js/jquery-3.6.4.js"></script>
+<script type="text/javascript">
+$ (function() { 
+	$("#b1").click(function() {
+			t1 = $("#food").val()
+			t2 = $("#where").val()
+			$("#text1").text("당신이 먹고 싶은 음식은 " + t1 + "이고, 가고 싶은 곳은 " + t2 + "군요")
+			
+	})	//b1
+	$("#b2").click(function() {
+			t3 = $("#site").val()
+			if (t3 == "movie") {
+				location.href = "http://cgv.co.kr"
+			} else {
+				location.href = "http://naver.com"
+			}
+	})	//b2
+})
+</script>
+</head>
+<body>
+먹고싶은 음식: <input id="food" value="커피" style="background: yellow"><br>
+가고싶은 곳: <input id="where" value="바다" style="background: yellow">
+<button id="b1">출력</button><br>
+<h3 id="text1"></h3><br>
+<hr>
+현재 가장 많이 들어가는 사이트<br>
+<input id="site" value="movie" style="background: pink">
+<button id="b2">이동</button>
+
+</body>
+</html>
